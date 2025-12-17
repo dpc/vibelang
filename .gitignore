@@ -53,3 +53,8 @@ __pycache__/
 .env.local
 *.local
 CLAUDE.md
+
+# Nix
+result
+result-*
+.direnv

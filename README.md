@@ -28,6 +28,8 @@ That's a whole beat. Just run it and edit while it plays—watching is on by def
 
 ### Install
 
+#### Using Cargo
+
 ```bash
 # Clone and build
 git clone https://github.com/yourusername/vibelang.git
@@ -36,6 +38,24 @@ cargo build --release
 
 # Run your first beat (watching is on by default)
 ./target/release/vibe examples/minimal_techno/main.vibe
+```
+
+#### Using Nix (with Flakes)
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/vibelang.git
+cd vibelang
+
+# Build with Nix
+nix build
+
+# Run
+./result/bin/vibe examples/minimal_techno/main.vibe
+
+# Or enter a development shell with all tools
+nix develop
+cargo build --release
 ```
 
 ### First Song

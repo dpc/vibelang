@@ -1,6 +1,7 @@
 {
   description = "VibeLang - Make music with code. Make code with vibes.";
 
+  # Nix flake for reproducible builds and development
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
